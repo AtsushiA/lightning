@@ -8,7 +8,7 @@
 
 変更できていないもの
 * get_stylesheet_directory()
-* get_parent_theme_file_path()
+* get_parent_theme_file_path() ※やろうと思えばできるが危険そうなので意図的にしていない
 * get_template_part()
 
 ## CSS命名規則

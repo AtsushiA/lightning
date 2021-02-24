@@ -1,8 +1,5 @@
 <?php
 
-define( 'LIG_G3_DIR_PATH', get_parent_theme_file_path( '_g3/' ) );
-define( 'LIG_G3_DIR', '_g3' );
-
 $theme_opt = wp_get_theme( get_template() );
 
 // add_action( 'lightning_site-header_append', function(){
@@ -145,24 +142,24 @@ function lightning_theme_setup() {
 
 }
 
-require get_parent_theme_file_path( LIG_G3_DIR . '/inc/class-vk-helpers.php' );
-require get_parent_theme_file_path( LIG_G3_DIR . '/inc/class-ltg-template-redirect.php' );
+require get_parent_theme_file_path( '/inc/class-vk-helpers.php' );
 
-require get_parent_theme_file_path( LIG_G3_DIR . '/inc/class-design-manager.php' );
-require get_parent_theme_file_path( LIG_G3_DIR . '/inc/class-vk-description-walker.php' );
-require get_parent_theme_file_path( LIG_G3_DIR . '/inc/template-tags.php' );
-require get_parent_theme_file_path( LIG_G3_DIR . '/inc/customize/customize.php' );
-require get_parent_theme_file_path( LIG_G3_DIR . '/inc/customize/customize-design.php' );
-require get_parent_theme_file_path( LIG_G3_DIR . '/inc/layout-controller/layout-controller.php' );
-require get_parent_theme_file_path( LIG_G3_DIR . '/inc/vk-components/config.php' );
-require get_parent_theme_file_path( LIG_G3_DIR . '/inc/vk-mobile-nav/config.php' );
-require get_parent_theme_file_path( LIG_G3_DIR . '/inc/vk-breadcrumb/config.php' );
-require get_parent_theme_file_path( LIG_G3_DIR . '/inc/widget-area.php' );
-require get_parent_theme_file_path( LIG_G3_DIR . '/inc/font-awesome/config.php' );
-require get_parent_theme_file_path( LIG_G3_DIR . '/inc/term-color/config.php' );
-require get_parent_theme_file_path( LIG_G3_DIR . '/inc/vk-css-optimize/config.php' );
-require get_parent_theme_file_path( LIG_G3_DIR . '/inc/vk-swiper/config.php' );
-require get_parent_theme_file_path( LIG_G3_DIR . '/inc/vk-advanced-slider/config.php' );
+
+require get_parent_theme_file_path( '/inc/class-design-manager.php' );
+require get_parent_theme_file_path( '/inc/class-vk-description-walker.php' );
+require get_parent_theme_file_path( '/inc/template-tags.php' );
+require get_parent_theme_file_path( '/inc/customize/customize.php' );
+require get_parent_theme_file_path( '/inc/customize/customize-design.php' );
+require get_parent_theme_file_path( '/inc/layout-controller/layout-controller.php' );
+require get_parent_theme_file_path( '/inc/vk-components/config.php' );
+require get_parent_theme_file_path( '/inc/vk-mobile-nav/config.php' );
+require get_parent_theme_file_path( '/inc/vk-breadcrumb/config.php' );
+require get_parent_theme_file_path( '/inc/widget-area.php' );
+require get_parent_theme_file_path( '/inc/font-awesome/config.php' );
+require get_parent_theme_file_path( '/inc/term-color/config.php' );
+require get_parent_theme_file_path( '/inc/vk-css-optimize/config.php' );
+require get_parent_theme_file_path( '/inc/vk-swiper/config.php' );
+require get_parent_theme_file_path( '/inc/vk-advanced-slider/config.php' );
 
 /*
   Load CSS

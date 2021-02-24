@@ -27,8 +27,7 @@ class LTG_Template_Redirect {
         }
         add_filter( 'template_directory_uri', array( __CLASS__, 'template_directory_uri' ) );
         add_filter( 'comments_template', array( __CLASS__, 'comments_template' ) );
-        // parent_theme_file_path の書き換えは危険なので保留
-        // add_filter( 'parent_theme_file_path', array( __CLASS__, 'parent_theme_file_path' ) );
+        add_filter( 'parent_theme_file_path', array( __CLASS__, 'parent_theme_file_path' ) );
     }
 
     public static function template_hierarchy_redirect( $templates ){
@@ -46,9 +45,9 @@ class LTG_Template_Redirect {
         $theme_template = get_stylesheet_directory() . '/' . LIG_G3_DIR . '/comments.php';
         return $theme_template;
     }
-    // public static function parent_theme_file_path( $parent_theme_file_path  ){
-    //     return $parent_theme_file_path . '/' . LIG_G3_DIR;
-    // }
+    public static function parent_theme_file_path( $parent_theme_file_path  ){
+        return $parent_theme_file_path . '/' . LIG_G3_DIR;
+    }
 }
 
 new LTG_Template_Redirect();
